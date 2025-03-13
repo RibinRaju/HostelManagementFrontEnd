@@ -1,0 +1,178 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('./src/images/hh2.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Header styles */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+    
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+   
+}
+/* General styles for navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    gap: 20px; /* Add spacing between list items */
+    padding: 0;
+    margin-top: 15px;
+    font-size: large;
+    
+}
+
+/* Navigation links */
+nav ul li a {
+    margin-top: 20vh;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    color:#fff;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: center; /* Center items on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        gap: 10px; /* Reduce spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Content styles */
+.content {
+    padding: 50px 20px;
+    text-align-last: center;
+    color:black;
+}
+
+.content h1,
+.content h2 {
+    color:wheat;
+}
+
+.content p {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(58, 57, 57, 0.767);
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 40px;
+    border-radius: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Book Now Button */
+.booknow {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    background-color: rgba(58, 57, 57, 0.767);
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 30px;
+    color: wheat;
+}
+.booknow a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.booknow a:hover {
+    text-decoration: underline; 
+}
+
+#link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container select {
+    width: calc(100% - 40px);
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.form-container input[type="submit"] {
+    width: calc(100% - 40px);
+    background-color: #8B4513;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #A52A2A;
+}
